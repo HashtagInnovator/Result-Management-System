@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+    <mat-tab-group>
+      <mat-tab label="Search Result"> 
+        <mat-card class="text-center">
+          <mat-grid-list cols="1" rowHeight="6:1">
+            <form class="signup-form" [formGroup]="studentSearchForm" (ngSubmit)="Search()">
+              <mat-grid-tile-header>
+                <h1>Find Result</h1>
+              </mat-grid-tile-header>
+        
+              <mat-card-content>
+                <mat-form-field appearance="outline" class="full-width mb-2 mt-3">
+                  <mat-label>Roll Number</mat-label>
+                  <input matInput type="number" formControlName="rollNumber" required>
+                  <mat-icon matSuffix>perm_identity</mat-icon>
+                </mat-form-field>
+              </mat-card-content>
+        
+              <mat-card-content>
+                  <mat-form-field appearance="outline" class="full-width mb-2 mt-3">
+                      <mat-label>Date Of Birth</mat-label>
+                      <input matInput [matDatepicker]="picker" formControlName="dateOfBirth" required>
+                      <mat-hint>MM/DD/YYYY</mat-hint>
+                      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+              </mat-card-content>
+        
+              <div class="text-center md-2 pt-2">
+                <button mat-raised-button color="primary" type="submit">Search</button>
+              </div>
+        
+        
+              <div *ngIf="loginError" class="text-danger mt-2">
+                Invalid email or password. Please try again.
+              </div>
+            </form>
+          </mat-grid-list>
+        </mat-card>  
+      </mat-tab>
+      <mat-tab label="Logout">
+        <div class="container">
+          <div class="row">
+            <mat-card class="logout-card">
+              <mat-card-header>
+                <h1 class="logout-title">Logout</h1>
+              </mat-card-header>
+              <mat-card-content>
+                <p class="logout-info">Are you sure you want to logout?</p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button mat-button color="primary" class="my-4" (click)="logout()" >Logout</button>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+        </div>
+          
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+
+
+
+  
+    <lib-ng-toast></lib-ng-toast>
+    <ng-confirm></ng-confirm>
+    <router-outlet></router-outlet>
+    

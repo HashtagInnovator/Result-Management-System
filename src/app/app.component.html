@@ -1,0 +1,19 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>Result Management</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="accent">Support</button>
+  </mat-toolbar>
+</div>
+
+<router-outlet> </router-outlet>
+<section *ngIf="(router.url === '/')">
+  <div class="example-button-row">
+    <button mat-raised-button class="my-class" color="accent" routerLink="teacher-signup" routerLinkActive="active">Teacher</button>
+  </div>
+  <div class="example-button-row">
+    <button mat-raised-button class="my-class" color="accent" routerLink="student-signup" routerLinkActive="active">Student</button>
+  </div>
+
+</section>
+

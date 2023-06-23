@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="result-card">
+      <h1 class="result-title">Result</h1>
+      <div class="result-details">
+        <p class="result-info">Roll No.: {{ roll }}</p>
+        <p class="result-info">Name: {{ name }}</p>
+        <p class="result-info">Date of Birth: {{date | date:'dd/MM/YYYY'}}</p>
+        <p class="result-info">Score: {{ score }}</p>
+      </div>
+      <button mat-button  type = "submit" color="accent" (click)="back()">Back</button>
+    </div>
+  </div>
+</div>

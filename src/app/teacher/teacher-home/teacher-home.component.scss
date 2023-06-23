@@ -1,0 +1,48 @@
+.logout-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 400px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 100);
+    animation: slide-in 0.5s ease;
+  }
+  
+  .logout-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .logout-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  button {
+    margin-right: 10px;
+    background-color: #1e8ee9;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #971de2;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
