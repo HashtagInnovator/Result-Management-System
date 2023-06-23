@@ -1,0 +1,63 @@
+{
+  "Records": [
+    {
+      "id": 5,
+      "rollNumber": 12,
+      "fullName": "Chetan",
+      "dateOfBirth": "2023-06-08T18:30:00.000Z",
+      "scoreNumber": 100
+    }
+  ],
+  "TeachersRegisters": [
+    {
+      "fullName": "chetan",
+      "email": "chetanohri@jl",
+      "password": "chetanohri",
+      "id": 1
+    },
+    {
+      "fullName": "name",
+      "email": "name@name",
+      "password": "namename",
+      "id": 2
+    },
+    {
+      "fullName": "Sakshi Ohri",
+      "email": "sakshi.ohri2@gmail.com",
+      "password": "Cheena@2889",
+      "id": 3
+    },
+    {
+      "fullName": "Divesh Shrivastava",
+      "email": "diveshshrivasta@gmail.com",
+      "password": "divesh1234",
+      "id": 4
+    }
+  ],
+  "student": [
+    {
+      "fullName": "Chetan OHri",
+      "email": "chetan@ohri",
+      "password": "chetan123",
+      "id": 1
+    },
+    {
+      "fullName": "Chetan OHri",
+      "email": "chetanohri2000@gmail.com",
+      "password": "Cheena@2889",
+      "id": 2
+    },
+    {
+      "fullName": "pooja",
+      "email": "pooja@gmail",
+      "password": "Pooja12345",
+      "id": 3
+    },
+    {
+      "fullName": "chetan ohri",
+      "email": "chetanohri9971@gmail.com",
+      "password": "cheena@2889",
+      "id": 4
+    }
+  ]
+}

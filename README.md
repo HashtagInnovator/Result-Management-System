@@ -1,49 +1,27 @@
-# Result-Management-System
+# Result
 
-A Result Management System built using Angular.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
-## Running the Application
+## Development server
 
-Before running the application, please make sure you have Angular installed. If you haven't installed Angular yet, you can follow the official Angular installation guide.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Build the Application
+## Code scaffolding
 
-To build the application, navigate to the project's root directory in your terminal or command prompt and run the following command:
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```console
-ng build
-```
+## Build
 
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-This command compiles the Angular code and generates the necessary files for running the application.
+## Running unit tests
 
-### Serve the Application
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-To serve the application on your localhost, use the following command:
+## Running end-to-end tests
 
-```console
-ng serve -o
-```
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-The `-o` flag automatically opens the application in your default browser. By default, the application will be served on port 4200.
+## Further help
 
-### Running the Backend
-
-This application requires a JSON server to handle backend operations. Follow these steps to set up the JSON server:
-
-1. Install JSON Server:
-
-   If you haven't installed the JSON server yet, you can do so by running the following command:
-
-```console
-npm install -g json-server
-```
-2. Start the JSON Server:
-
-To start the JSON server and watch a specific JSON database file, use the following command:
-
-```console
-json-server --watch {json_database}
-```
-Replace `{json_database}` with the path to your JSON database file. This command starts the JSON server and makes the database accessible for the Result Management System.
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
